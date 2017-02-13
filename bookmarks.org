@@ -1,0 +1,7 @@
+* Emacs
+** OrgMode
+[[https://habrahabr.ru/post/105300/][Введение в org-mode emacs]]
+
+* Microservices
+** REST API
+[[http://apiawards.co/][API Awards]]

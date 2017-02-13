@@ -1,0 +1,8 @@
+List of books I should read
+
+* Propgramming
+** Tanenbaum - Computer Networks
+** Tanenbaum - Modern Operating Systems
+** DONE Art of UNIX programming
+   CLOSED: [2017-02-13 Mon 16:48]
+** Unix network programming

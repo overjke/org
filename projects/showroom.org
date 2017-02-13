@@ -1,0 +1,39 @@
+OpusCapita Showroom
+
+* Synopsis
+
+Showroom is a documenting platform base on NodeJS.
+Main purpose of this project is to provide handy technical documentation.
+
+* Server
+
+Synopsis:
+
+Based on microservices REST API architecture
+
+** Configuration
+
+#+NAME: .showroomrc
+#+BEGIN_SRC json
+{
+   "hello": "hell"
+}
+#+END_SRC
+
+** Services
+
+*** [ ] NPM service
+
+**** Description
+
+**** REST API
+
+#+INCLUDE: "./npm.yml"
+
+*** [ ] GIT service
+
+
+
+* Client
+
+* Plugins
