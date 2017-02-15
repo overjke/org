@@ -20,19 +20,44 @@ Based on microservices REST API architecture
 }
 #+END_SRC
 
-** Services
+** Services [0/2]
 
-*** [ ] NPM service
+- [ ] NPM service [0/9]
+  - [ ] GET package dependencies in format
+  - [ ] GET package repository URL with VCS ref || throw 404
+  - [ ] GET package's package.json
+  - [ ] GET package's versions
+  - [ ] GET package's installed versions
+  - [ ] PUT package [ { name: xxx, version: xxx } ]
+  - [ ] POST reinstall package
+  - [ ] DELETE package [ { name: xxx, version: xxx } ]
+  - [ ] GET package's tarball (package-name.tar.gz)
 
-**** Description
+- [ ] GIT CI service [0/17]
 
-**** REST API
+  Git auth only by using SSH keys
+  Service auth only for trusted hosts
+  Every repository must be isolated and have self workarea
 
-#+INCLUDE: "./npm.yml"
-
-*** [ ] GIT service
-
-
+  - [ ] GET git version
+  - [ ] GET list of repositories
+  - [ ] PUT repository url
+  - [ ] DELETE repository url
+  - [ ] GET list of repository VCS refs
+  - [ ] PUT repository VCS ref
+  - [ ] DELETE repository VCS ref
+  - [ ] GET list of fetched repositories with their VCS refs
+  - [ ] GET list of cleaned repositories with their VCS refs
+  - [ ] POST refetch repository VCS ref
+  - [ ] POST clean repository VCS ref
+  - [ ] POST execute into repository. Must provide artifacts names and URLs to push artifact after execution
+  - [ ] POST execute into repository using docker image. Must provide artifact names and URLs to push after execution
+  - [ ] GET status of repository
+  - [ ] GET get repository files hierarchy tree
+  - [ ] GET repository file by path
+  - [ ] GET artifact (artifact.tar.gz)
+  - [ ] GET last executions
+  - [ ] GET last executions for repository with VCS ref
 
 * Client
 
