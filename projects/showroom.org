@@ -9,7 +9,8 @@ Main purpose of this project is to provide handy technical documentation.
 
 Synopsis:
 
-Based on microservices REST API architecture
+Based on microservices REST API architecture. 
+Using MongoDB
 
 ** Configuration
 
@@ -20,34 +21,28 @@ Based on microservices REST API architecture
 }
 #+END_SRC
 
-** Services [0/2]
+** Services [0/4]
 
-- [ ] NPM service [0/9]
-  - [ ] GET package dependencies in format
-  - [ ] GET package repository URL with VCS ref || throw 404
-  - [ ] GET package's package.json
-  - [ ] GET package's versions
-  - [ ] GET package's installed versions
-  - [ ] PUT package [ { name: xxx, version: xxx } ]
-  - [ ] POST reinstall package
-  - [ ] DELETE package [ { name: xxx, version: xxx } ]
-  - [ ] GET package's tarball (package-name.tar.gz)
+- [ ] NPM service [0/10]
+  - [ ] GET package package.json
+  - [ ] GET package versions
+  - [ ] GET package installed versions
+  - [ ] GET service configuration
+  - [ ] UPDATE service configuration
+  - [ ] POST refetch packages
+  - [ ] POST clean workarea
+  - [ ] GET package tarball (package-name.tar.gz)
+  - [ ] GET package files hierarchy tree
+  - [ ] GET package file by path
 
-- [ ] GIT CI service [0/17]
+- [ ] GIT-CI service [0/16]
 
   Git auth only by using SSH keys
   Service auth only for trusted hosts
   Every repository must be isolated and have self workarea
 
-  - [ ] GET git version
-  - [ ] GET list of repositories
-  - [ ] PUT repository url
-  - [ ] DELETE repository url
-  - [ ] GET list of repository VCS refs
-  - [ ] PUT repository VCS ref
-  - [ ] DELETE repository VCS ref
-  - [ ] GET list of fetched repositories with their VCS refs
-  - [ ] GET list of cleaned repositories with their VCS refs
+  - [ ] GET service configuration
+  - [ ] UPDATE service configuration
   - [ ] POST refetch repository VCS ref
   - [ ] POST clean repository VCS ref
   - [ ] POST execute into repository. Must provide artifacts names and URLs to push artifact after execution
@@ -58,6 +53,20 @@ Based on microservices REST API architecture
   - [ ] GET artifact (artifact.tar.gz)
   - [ ] GET last executions
   - [ ] GET last executions for repository with VCS ref
+
+- [ ] SHOWROOM service [0/2]
+  - [ ] GET packages list
+  - [ ] GET package 
+
+- [ ] SHOWROOM react-plugin service [0/8]
+  - [ ] GET components list
+  - [ ] DELETE component version
+  - [ ] GET component versions
+  - [ ] GET component bundle
+  - [ ] GET component documentation
+  - [ ] GET component repository link
+  - [ ] GET component repository README (optional)
+  - [ ] GET component repository CHANGELOG (optional)
 
 * Client
 
